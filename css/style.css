@@ -555,15 +555,26 @@ h6,
     background-color: #ED1C24 !important;
 }
 
-@media (max-width: 800px){
-	.logo {
+@media (max-width: 800px) {
+    .logo {
         width: 150px;
         height: auto;
     }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        visibility: hidden;
+    }
 }
-@media (max-width: 540px){
-	.logo {
+
+@media (max-width: 540px) {
+    .logo {
         width: 150px;
         height: auto;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        visibility: hidden;
     }
 }
