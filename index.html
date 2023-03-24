@@ -67,7 +67,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link" >Home</a>
                     <a href="#aboutus" class="nav-item nav-link">Nosotros</a>
                     <a href="#services" class="nav-item nav-link">Servicios</a>
                     <a href="#contact" class="nav-item nav-link">Contacto</a>
@@ -100,8 +100,7 @@
                                 <div class="col-lg-8">
                                     <br>
                                     <br>
-                                    <h1 class="display-4 mb-4 animated slideInDown">Tu libertad financiera<br> es
-                                        nuestro objetivo</h1>
+                                    <h1 class="display-3 mb-4 animated slideInDown">Tu libertad financiera es nuestro objetivo</h1>
                                     <a href="#services" class="btn btn-primary py-3 px-5 animated slideInDown"
                                         id="ExploreButton">Explorar Más</a>
                                 </div>
@@ -117,7 +116,7 @@
                                 <div class="col-lg-7">
                                     <br>
                                     <br>
-                                    <h1 class="display-4 mb-4 animated slideInDown">Somos tu apoyo <br>financiero</h1>
+                                    <h1 class="display-3 mb-4 animated slideInDown">Somos tu apoyo financiero</h1>
                                     <a href="#services" class="btn btn-primary py-3 px-5 animated slideInDown">Explorar
                                         Más</a>
                                 </div>
@@ -475,42 +474,73 @@
                             </p>
                             <h1 class="display-5 mb-5">Solicita una llamada</h1>
                         </div>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Nombre</label>
+                        <form class="needs-validation" action="https://formspree.io/f/xknavqez" method="POST" novalidate>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                        <label for="name" class="form-label">Nombre</label>
+                                        <div class="valid-feedback">
+                                            Todo bien
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Ingresa tu nombre
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" class="form-control" id="mail" placeholder="Your Email" required>
+                                        <label for="mail" class="form-label">Email</label>
+                                        <div class="valid-feedback">
+                                            Email válido
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Ingresa un email válido
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="tel" name="tel" class="form-control" id="tel" placeholder="Your Mobile" required>
+                                        <label for="tel" class="form-label">Tel.</label>
+                                        <div class="valid-feedback">
+                                            Tel. válido
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Ingresa un teléfono válido
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="service" class="form-control" id="subject" placeholder="Subject" required>
+                                        <label for="subject" class="form-label">Servicio</label>
+                                        <div class="valid-feedback">
+                                            
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Escriba el servicio de su interes.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" name="textarea" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
+                                        <label for="message">Mensaje</label>
+                                        <div class="valid-feedback">
+                                            
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Ingresa tu mensaje
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                    <label for="mail">Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                    <label for="mobile">Tel.</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Servicio</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Mensaje</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -715,12 +745,18 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>
                     <p>Suscribete para recibir información relevante para tus finanzas.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Registrar</button>
-                    </div>
+                    <form class="needs-validation" action="https://formspree.io/f/xknavqez" method="POST" novalidate>
+                        <div class="position-relative w-100">
+                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="email" name="suscriptor" class="form-control" placeholder="Email" required>
+                            <div class="valid-feedback">
+                                
+                            </div>
+                            <div class="invalid-feedback">
+                                Ingresa un email válido 
+                            </div>
+                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Registrar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -753,6 +789,28 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
+    <script>
+        //1st Form Validation
+
+(() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

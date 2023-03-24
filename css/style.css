@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /********** Template CSS **********/
 :root {
-    --primary: #ED1C24;
-    --secondary: #E93C05;
+    --primary: #FFC400;
+    --secondary: #0D47A1;
     --tertiary: #555555;
     --light: #DFE4FD;
     --dark: #011A41;
@@ -105,13 +107,13 @@ h6,
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
 }
 
-.navbar .navbar-nav .nav-link {
+/* .navbar .navbar-nav .nav-link {
     padding: 25px 15px;
     color: black;
     font-weight: 500;
@@ -120,11 +122,25 @@ h6,
                 -0.5px -0.5px 0 white,
                 0.5px -0.5px 0 white,
                 -0.5px 0.5px 0 white;
+} */
+
+
+.navbar .navbar-nav .nav-link {
+    padding: 25px 24px;
+    /* color: black; */
+    font-weight: 700 !important;
+    outline: none;
+    color: #0D47A0;;
+    font-size: 18px !important;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
+
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #ED1C24;
+    color: white;
+    background-color:#0D47A0;
 }
 
 @media (max-width: 991.98px) {
@@ -174,15 +190,15 @@ h6,
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 3rem;
+    width: 5rem;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: #ED1C24;
-    border: 10px solid #ED1C24;
+    width: 6rem;
+    height: 6rem;
+    background-color: #FFC400;
+    border: 10px solid #FFC400;
 }
 
 .carousel-control-prev-icon {
@@ -226,7 +242,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(#ed1c23a7, #ed1c23f0), url(../img/bg.png);
+    background: linear-gradient(#ffc40085, #FFC400), url(../img/bg.png);
 }
 
 
@@ -242,7 +258,7 @@ h6,
     height: 50%;
     top: 0;
     left: 0;
-    background: linear-gradient(#ed1c23a7, #ed1c23f0), url(../img/bg.png);
+    background: linear-gradient(#ffc40085, #FFC400), url(../img/bg.png);
     z-index: -1;
 }
 
@@ -269,8 +285,8 @@ h6,
 }
 
 .service .nav .nav-link.active {
-    border-color: #ED1C24 !important;
-    background: #ED1C24;
+    border-color: #FFC400 !important;
+    background: #FFC400;
 }
 
 .service .nav .nav-link.active h5 {
@@ -520,13 +536,13 @@ h6,
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     margin-right: 10px;
 }
 
 .footer .btn.btn-link:hover {
-    color: #ED1C24;
+    color: #FFC400;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -552,7 +568,7 @@ h6,
 }
 
 .ExploreButton {
-    background-color: #ED1C24 !important;
+    background-color: #FFC400 !important;
 }
 
 @media (max-width: 800px) {
