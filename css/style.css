@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 /********** Template CSS **********/
 :root {
@@ -195,18 +196,18 @@ h6,
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     background-color: #FFC400;
-    border: 10px solid #FFC400;
+    border: 8px solid #FFC400;
 }
 
 .carousel-control-prev-icon {
-    border-radius: 0 3rem 3rem 0;
+    border-radius: 50% 50% 50% 50%;
 }
 
 .carousel-control-next-icon {
-    border-radius: 3rem 0 0 3rem;
+    border-radius: 50% 50% 50% 50%;
 }
 
 @media (max-width: 768px) {
@@ -593,4 +594,22 @@ h6,
     .carousel-control-next-icon {
         visibility: hidden;
     }
+    .row.justify-content-start {
+        --bs-gutter-x: -3.5rem !important;
+        margin-top: 100px !important;
+    }
+}
+h1.display-3.mb-4.slideInDown {
+    color: #FFC400;
+}
+
+a.btn.btn-primary.py-3.px-5.slideInDown {
+    background-color: #FFC400;
+    border: #FFC400;
+    color: #0D47A1;
+}
+
+.row.justify-content-start {
+   
+    margin-top: 350px;
 }
